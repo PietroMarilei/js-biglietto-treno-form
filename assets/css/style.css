@@ -12,4 +12,9 @@ body {
     font-size: 0.7rem !important;
     font-family: 'Albert Sans', sans-serif;
     font-family: 'Raleway', sans-serif;
+    background-color: rgb(118, 25, 25) !important;
+}
+
+.name_container {
+    background-color: rgb(162, 190, 213);
 }

@@ -4,6 +4,12 @@
     box-sizing: border-box
 }
 
+.d_flex {
+    display: flex;
+}
+
 body {
-    background-color: grey;
+
+    font-family: 'Albert Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }

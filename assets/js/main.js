@@ -20,27 +20,33 @@ function () {
 
 if (userAge == 'minorenne') {
    const youngPrice = (ticketPrice - (ticketPrice / 100 * 20)).toFixed(2) ;
-// ho il prezzo giovani
+    // ho il prezzo giovani
+   document.getElementById("discountTipe").innerHTML = 'Offerta Giovani';
+   document.getElementById("finalPrice").innerHTML = `${youngPrice}€`;
 
-   document.getElementById("answear").innerHTML = `Il tuo prezzo giovani é ${youngPrice}€`;
-// lo scrivo in pagina
+    // lo scrivo in pagina
    console.log(youngPrice);
 
 }else if (userAge == 'anziano'){
     const elderPrice = (ticketPrice - (ticketPrice /100 * 40)).toFixed(2);
-// ho il prezzo vecchi
+    // ho il prezzo vecchi
 
-    document.getElementById("answear").innerHTML = `Il tuo prezzo anziani é ${elderPrice}€`;
-// lo scrivo in pagina
+    document.getElementById("discountTipe").innerHTML = 'Offerta Anziani';
+   document.getElementById("finalPrice").innerHTML = `${elderPrice}€`;
+    // lo scrivo in pagina
     console.log(elderPrice);
 }
 
 else {
-    document.getElementById("answear").innerHTML = `Il tuo prezzo normale é ${ticketPrice}€`;
+    document.getElementById("discountTipe").innerHTML = 'Biglietto Standard';
+   document.getElementById("finalPrice").innerHTML = `${ticketPrice}€`;
+    // ho il prezzo gente normale e lo scrivo in pagina
+
+document.getElementById("userName").innerHTML = userData;
 }
-// ho il prezzo gente normale e lo scrivo in pagina
+   
 
-
+ 
 
 
 }

@@ -44,24 +44,31 @@ else {
 
 document.getElementById("userName").innerHTML = userData;
 
+// ---------- random carrozza
 
+document.getElementById("carrozza").innerHTML = Math.floor((Math.random() * 10)+ 1);
 }
 
+// ------random codice Cp
+document.getElementById("cpCode").innerHTML = (Math.floor(100000 + Math.random() * 900000))
+
+// -----appare il biglietto
+
+document.getElementById("ticket").classList.remove('invisible')
 }
+
+
 )
 
-// -----------------reset down here
+// -----------------reset button down here
 
 
 document.getElementById('reset').addEventListener('click',
 function () {
-    const userData = document.getElementById('userData').value = '';
+    document.getElementById('userData').value = '';
    
-
-    const travelLenght = document.getElementById('travelLenght').value= '';
-    //  se premi reset i valori di userData e travelLenght diventano "vuoti"
-   
+    document.getElementById('travelLenght').value= ''; 
 }
-
+//  se premi reset i valori di userData e travelLenght diventano "vuoti"
 
 )

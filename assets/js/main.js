@@ -43,15 +43,25 @@ else {
     // ho il prezzo gente normale e lo scrivo in pagina
 
 document.getElementById("userName").innerHTML = userData;
+
+
 }
-   
-
- 
-
 
 }
 )
 
+// -----------------reset down here
 
 
+document.getElementById('reset').addEventListener('click',
+function () {
+    const userData = document.getElementById('userData').value = '';
+   
 
+    const travelLenght = document.getElementById('travelLenght').value= '';
+    //  se premi reset i valori di userData e travelLenght diventano "vuoti"
+   
+}
+
+
+)
